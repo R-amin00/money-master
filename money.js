@@ -7,11 +7,6 @@ function getExpensessMoney(id) {
 
 }
 
-// Get Saving Amount 
-function getSavingAmount() {
-  
-
-}
 
 // Save button handler
 document.getElementById('btn-saving').addEventListener('click', ()=>{
