@@ -5,9 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <!-- Tainwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Money Master</title>
 </head>
 <body>
+    <header></header>
+    <main>
+        <section>
+            <h1 class="text-5xl font-semibold text-center mt-9 mb-10">Money Master 💰</h1>
+            <div class="flex justify-center">
+                <div class="w-3/6 h-2/4">
+                   <img src="./image/money-img.jpg" alt="">
+                </div>
+                <div class="w1/2 px-9 items-center">
+                    <div class="mb-7">
+                        <h4 class="text-center font-semibold">Income</h4>
+                        <div class="flex mt-5 mb-7 justify-between gap-3">
+                            <p class="justify-center">income:</p>
+                            <input type="text" id="income" class="outline-none bg-slate-300 w-56 px-2 py-1 rounded-sm" placeholder="Income">
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-center font-semibold">Expenses</h4>
+                        <div class="flex mt-5 mb-7 justify-between gap-3">
+                            <p>Food:</p>
+                            <input type="text" id="food-cost" class="outline-none bg-slate-300 w-56 px-2 py-1 rounded-sm" placeholder="Food Cost">
+                        </div>
+                        <div class="flex mt-5 mb-7 justify-between gap-3">
+                            <p>Rent:</p>
+                            <input type="text" id="rent-cost" class="outline-none bg-slate-300 w-56 px-2 py-1 rounded-sm" placeholder="Rent Cost">
+                        </div>
+                        <div class="flex mt-5 mb-7 justify-between gap-3">
+                            <p class="justify-center">Clothes:</p>
+                            <input type="text" id="clothes-cost" class="outline-none bg-slate-300 w-56 px-2 py-1 rounded-sm" placeholder="Clothes Cost">
+                        </div>
+                    </div>
+                    <button class="w-48 bg-sky-500 text-white text-xl py-1 rounded-sm ml-28 mb-7" id="btn-calculate">Calculate</button>
+                    <h4 class="font-semibold mb-7">Total Expensess: <span id="total-expense">5500</span></h4>
+                    <h4 class="font-semibold mb-7">Balance: <span id="balance">4500</span></h4>
+                    <div class="flex items-center gap-3 mb-7">
+                        <p>Save:</p>
+                        <input type="text" class="outline-none bg-slate-300 w-14 px-2 py-1 rounded-sm">
+                        <p>%</p>
+                        <button class="w-36 bg-sky-500 text-white text-xl py-1 rounded-sm">Save</button>
+                    </div>
+                    <h4 class="font-semibold mb-7">Saving Amount: <span>2000</span></h4>
+                    <h4 class="font-semibold mb-7">Remaining Balance: <span>2500</span></h4>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./money.js"></script>
 </body>
 </html>
