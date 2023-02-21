@@ -7,6 +7,32 @@ function getExpensessMoney(id) {
 
 }
 
+// Get Saving Amount 
+function getSavingAmount() {
+  
+
+}
+
+// Save button handler
+document.getElementById('btn-saving').addEventListener('click', ()=>{
+     // Saving Input Field
+     const savingMoney = getExpensessMoney('save-amount');
+     const newSavingMoney = savingMoney / 100;
+     // Get current Balance
+     const currentBalance = document.getElementById('balance').innerText;
+     const currentBalanceNum = parseInt(currentBalance);
+     const savingBalance = currentBalanceNum * newSavingMoney;
+    // Display Saving Money 
+     const savingDisplay = document.getElementById('saving');
+     savingDisplay.innerText = savingBalance;
+
+     //Get Remain Balance
+     const newRemainBalance =currentBalance - savingBalance;
+     const remainBalance = document.getElementById('remain-balance');
+     remainBalance.innerText = newRemainBalance;
+})
+
+// Calculate button handler
 document.getElementById('btn-calculate').addEventListener('click', ()=>{
     //Income Input Field 
     const income = getExpensessMoney('income');
@@ -22,6 +48,5 @@ document.getElementById('btn-calculate').addEventListener('click', ()=>{
     const balancefield = document.getElementById('balance');
     const balance = income - costTotal;
     balancefield.innerText = balance;
-
-    
 })
+
