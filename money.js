@@ -16,7 +16,7 @@ document.getElementById('btn-saving').addEventListener('click', ()=>{
      // Get current Balance
      const currentBalance = document.getElementById('balance').innerText;
      const currentBalanceNum = parseInt(currentBalance);
-     const savingBalance = currentBalanceNum * newSavingMoney;
+     const savingBalance = (currentBalanceNum * newSavingMoney).toFixed(2);
     // Display Saving Money 
      const savingDisplay = document.getElementById('saving');
      savingDisplay.innerText = savingBalance;
